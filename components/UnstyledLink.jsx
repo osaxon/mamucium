@@ -29,7 +29,7 @@ export default function UnstyledLink({
       rel='noopener noreferrer'
       href={href}
       {...rest}
-      className={clsx(className, 'cursor-[ne-resize]')}
+      className={clsx(className)}
     >
       {children}
     </a>

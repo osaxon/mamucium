@@ -4,11 +4,11 @@ import { useRouter } from 'next/router';
 export default function Seo(props) {
   const router = useRouter();
   const meta = {
-    title: 'Next.js Tailwind Starter',
-    site_name: 'Next.js Tailwind Starter',
-    description: 'A template for Next.js and Tailwindcss by Theodorus Clarence',
-    url: 'https://theodorusclarence.com',
-    image: 'https://theodorusclarence.com/favicon/large-og.jpg',
+    title: 'Mamucium',
+    site_name: 'Mamucium',
+    description: 'Blog about the the city of Manchester',
+    url: '',
+    image: '',
     type: 'website',
     robots: 'follow, index',
     ...props,
@@ -31,12 +31,6 @@ export default function Seo(props) {
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
       <meta name='image' property='og:image' content={meta.image} />
-      {/* Twitter */}
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@th_clarence' />
-      <meta name='twitter:title' content={meta.title} />
-      <meta name='twitter:description' content={meta.description} />
-      <meta name='twitter:image' content={meta.image} />
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
@@ -48,7 +42,7 @@ export default function Seo(props) {
           <meta
             name='author'
             property='article:author'
-            content='Theodorus Clarence'
+            content='Oliver Saxon'
           />
         </>
       )}
