@@ -3,13 +3,13 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
-    <main>
-      <section className='bg-dark flex flex-col min-h-screen'>
+    <div className='bg-dark'>
+      <section className='flex min-h-screen flex-col'>
         <Nav />
         {children}
         <Footer />
       </section>
-    </main>
+    </div>
   );
 };
 

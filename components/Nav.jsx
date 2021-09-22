@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../public/img/logo.png';
+import LogoSVG from 'public/img/logo.svg';
 
 const links = [
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-  { href: '/projects', label: 'Projects' },
+  { href: '/about', label: '???' },
+  { href: '/contact', label: 'Stuff' },
+  { href: '/projects', label: 'Sign me up' },
 ];
 
 export default function Nav() {
@@ -14,18 +14,15 @@ export default function Nav() {
       <nav className=''>
         <ul className='flex flex-col md:flex-row items-center justify-between py-4 layout text-white'>
           <li>
-            <div className='flex md:flex-row flex-col flex-shrink-0 items-center'>
+            <div>
               <Link href='/'>
-                <a>
-                  <Image
-                    src={Logo}
-                    width='85%'
-                    height='85%'
-                    objectFit='contain'
-                  />
+                <a className='flex md:flex-row hover:text-primary-400 flex-col flex-shrink-0 items-center'>
+                  <LogoSVG width={100} className='stroke-current ' />
+                  <h2 className='uppercase font-serif hover:cursor-pointer'>
+                    Mancvnivm
+                  </h2>
                 </a>
               </Link>
-              <h2 className='uppercase font-serif'>Mancvnivm</h2>
             </div>
           </li>
           <ul className='flex items-center justify-between space-x-4'>
