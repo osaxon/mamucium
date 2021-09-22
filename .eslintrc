@@ -7,7 +7,6 @@
   "extends": ["eslint:recommended", "next"],
   "rules": {
     "no-unused-vars": "warn",
-    "no-console": "warn",
-    "quotes": ["error", "double"]
+    "no-console": "warn"
   }
 }
