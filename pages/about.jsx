@@ -10,8 +10,8 @@ const about = () => {
       <Seo templateTitle='About' />
       <section className='flex-grow flex mb-auto'>
         <article className='layout py-10 text-white'>
-          <div className='flex justify-center md:justify-start md:text-left cursor-default'>
-            <div className='w-2/3'>
+          <div className='flex flex-col md:flex-row justify-center md:justify-start md:text-left cursor-default'>
+            <div className='p-6 md:w-2/3'>
               <h1 className='mb-4'>About</h1>
               <h4 className='text-justify'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
@@ -19,7 +19,9 @@ const about = () => {
                 quam?
               </h4>
             </div>
-            <div className='flex-shrink-0'></div>
+            <div className='p-6 md:w-1/3'>
+              <Image src={Tunnel} layout='responsive' objectFit='contain' />
+            </div>
           </div>
         </article>
       </section>

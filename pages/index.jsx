@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <>
       <Seo templateTitle='Home' />
-      <section className='flex-grow flex mb-auto'>
+      <section className='flex-grow flex'>
         <article className='flex flex-col pt-20 md:pt-0 cursor-default md:mt-0 md:justify-center text-white layout'>
           <div className='flex flex-col items-center'>
-            <h1 className=''>This is Manchester</h1>
+            <h1 className=''>Headline</h1>
             <h2 className='cursor-default'>
               Read more <CustomLink href='/about'>here</CustomLink>
             </h2>
